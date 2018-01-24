@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
 //Name: castle.ma
-//Last modified: Tue, Jan 23, 2018 05:18:22 PM
+//Last modified: Tue, Jan 23, 2018 05:23:41 PM
 //Codeset: 1252
 requires maya "2017ff05";
 currentUnit -l centimeter -a degree -t film;
@@ -13,17 +13,17 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "A927E9B6-48C4-4C9F-1EE2-81A699A293A0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -67.339700363887232 307.02736752448629 1482.8650959489391 ;
-	setAttr ".r" -type "double3" -5.1383528404457763 12237.399999999205 -2.487368917600354e-017 ;
+	setAttr ".t" -type "double3" 956.581835689635 602.40163783171784 -2476.3839241962355 ;
+	setAttr ".r" -type "double3" -9.9383528399217358 11678.600000000188 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A18D8EB5-4869-EC43-9CBC-35B54ACD4B19";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 1490.4531322370931;
+	setAttr ".coi" 2587.1188571573921;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0 173.5408793464145 -0.070257201790809631 ;
+	setAttr ".tp" -type "double3" 26.76756649145026 155.89473322315149 -103.77755355834961 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
@@ -85,15 +85,36 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.25 ;
+	setAttr ".pv" -type "double2" 0.125 0.25 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 8 ".pt[448:455]" -type "float3"  -3.6973355 0 0 -3.6973355 
-		0 0 -3.6973355 0 0 -3.6973355 0 0 3.6973355 0 0 3.6973355 0 0 3.6973355 0 0 3.6973355 
-		0 0;
+	setAttr -s 29 ".pt";
+	setAttr ".pt[250]" -type "float3" 1.2516975e-006 1.5849843 -1.9073486e-006 ;
+	setAttr ".pt[251]" -type "float3" 2.9802322e-007 1.5849836 -9.5367432e-007 ;
+	setAttr ".pt[254]" -type "float3" -1.3906752 2.5042405 6.2829385 ;
+	setAttr ".pt[255]" -type "float3" -1.3598492 2.5802579 6.2829375 ;
+	setAttr ".pt[257]" -type "float3" 0 6.9849193e-010 0 ;
+	setAttr ".pt[328]" -type "float3" 2.3841858e-007 1.5849847 1.9669533e-006 ;
+	setAttr ".pt[329]" -type "float3" 5.9604645e-008 1.5849844 1.937151e-006 ;
+	setAttr ".pt[330]" -type "float3" 0 1.8626451e-009 0 ;
+	setAttr ".pt[332]" -type "float3" 1.3675822 2.1496224 6.2829375 ;
+	setAttr ".pt[333]" -type "float3" 1.3822684 2.1858389 6.2829385 ;
+	setAttr ".pt[380]" -type "float3" 1.7881393e-007 1.5849843 2.8610229e-006 ;
+	setAttr ".pt[381]" -type "float3" -8.9406967e-007 1.5849844 3.8146973e-006 ;
+	setAttr ".pt[382]" -type "float3" 0 1.8626451e-009 0 ;
+	setAttr ".pt[384]" -type "float3" -2.3841858e-007 2.3096828 1.4305115e-006 ;
+	setAttr ".pt[385]" -type "float3" 9.5367432e-007 2.3096828 1.9073486e-006 ;
+	setAttr ".pt[448]" -type "float3" -3.6973355 0 0 ;
+	setAttr ".pt[449]" -type "float3" -3.6973355 0 0 ;
+	setAttr ".pt[450]" -type "float3" -3.6973355 0 0 ;
+	setAttr ".pt[451]" -type "float3" -3.6973355 0 0 ;
+	setAttr ".pt[452]" -type "float3" 3.6973355 0 0 ;
+	setAttr ".pt[453]" -type "float3" 3.6973355 0 0 ;
+	setAttr ".pt[454]" -type "float3" 3.6973355 0 0 ;
+	setAttr ".pt[455]" -type "float3" 3.6973355 0 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCube2";
 	rename -uid "F08873C5-4BF0-B162-D10C-67A634FD911E";
